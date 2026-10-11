@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package modelo;
 
-/**
- *
- * @author Usuario
- */
-public class FiguraGeometrica {
-    
+public abstract class FiguraGeometrica {
+    // Métodos abstractos que obligan a las clases hijas a usar Polimorfismo
+    public abstract double calcularArea();
+    public abstract void mover(double deltaX, double deltaY);
 }
