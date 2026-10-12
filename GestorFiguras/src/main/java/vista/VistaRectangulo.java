@@ -12,8 +12,6 @@ package vista;
 
     public class VistaRectangulo extends javax.swing.JFrame {
 
-        private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(VistaRectangulo.class.getName());
-
         /**
          * Creates new form VistaRectangulo
          */
@@ -120,7 +118,7 @@ package vista;
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-        // --- GETTERS PARA QUE EL CONTROLADOR LEA LOS DATOS ---
+// --- GETTERS PARA QUE EL CONTROLADOR LEA LOS DATOS ---
         public javax.swing.JButton getBtnArea() {
             return btnArea;
         }
@@ -160,45 +158,6 @@ package vista;
         public javax.swing.JTextField getTxtY2() {
             return txtY2;
         }
-
-        // Variables declaration - do not modify                     
-        private javax.swing.JButton btnArea;
-        private javax.swing.JButton btnLimpiar;
-        private javax.swing.JButton btnVerificar;
-        private javax.swing.JLabel lblResultado;
-        private javax.swing.JTextField txtPx;
-        private javax.swing.JTextField txtPy;
-        private javax.swing.JTextField txtX1;
-        private javax.swing.JTextField txtX2;
-        private javax.swing.JTextField txtY1;
-        private javax.swing.JTextField txtY2;
-        // End of variables declaration                   
-    }
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new VistaRectangulo().setVisible(true));
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnArea;
